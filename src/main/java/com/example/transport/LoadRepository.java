@@ -3,7 +3,10 @@ package com.example.transport;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface PayLoadRepository extends JpaRepository<PayLoad,Long> {
+import java.util.List;
 
+@Repository
+public interface LoadRepository extends JpaRepository<Load,Long> {
+
+ //   List<Load> findByShipperId(String shipperId);
 }

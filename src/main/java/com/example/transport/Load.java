@@ -14,7 +14,7 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "load")
 
-public class PayLoad {
+public class Load {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
