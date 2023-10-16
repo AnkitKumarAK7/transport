@@ -1,4 +1,4 @@
-package com.example.transport;
+package com.example.transport.model;
 
 import jakarta.persistence.*;
 import lombok.*;
