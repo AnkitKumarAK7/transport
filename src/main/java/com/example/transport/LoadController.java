@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @RestController
 @RequestMapping("/load")
@@ -32,5 +31,21 @@ public class LoadController {
         } else {
             return ResponseEntity.notFound().build();
         }
+    }
+
+    @PutMapping("/{loadId}")
+    public ResponseEntity<Load> updateLoad(@PathVariable Long loadId, @RequestBody Load updatedLoad) {
+        Load load = loadService.updateLoad(loadId, updatedLoad);
+        if (load != null) {
+            return ResponseEntity.ok(load);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    @DeleteMapping("/{loadId}")
+    public ResponseEntity<Void> deleteLoad(@PathVariable Long loadId) {
+        loadService.deleteLoad(loadId);
+        return ResponseEntity.noContent().build();
     }
 }
