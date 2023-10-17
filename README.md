@@ -1,5 +1,5 @@
-# transport
-
+# Load Management System
+A simple Spring Boot application to manage and track loads.
 
 ## Endpoints
 
