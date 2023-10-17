@@ -3,8 +3,9 @@ package com.example.transport.model;
 import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import org.hibernate.annotations.CreationTimestamp;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @NoArgsConstructor
@@ -36,6 +37,7 @@ public class Load {
 
     String shipperId;
 
-    LocalDate date;
+    @CreationTimestamp
+    Date date;
 
 }
