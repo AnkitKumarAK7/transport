@@ -21,7 +21,7 @@ Before using the Load Management System, ensure that you have the following prer
 
 - Java Development Kit (JDK) installed
 - Spring Boot and Spring Framework
-- A database system (e.g., PostgreSQL or H2) and configuration
+- A database system (e.g., PostgreSQL, MySQL or H2) and configuration
 
 ## Endpoints
  The system provides the following API endpoints:
